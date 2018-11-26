@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{ RouterModule ,Routes} from '@angular/router';
+import {FormsModule} from '@angular/forms';
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,8 @@ const appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    BsDatepickerModule.forRoot(),
     AppRoutingModule,
     RouterModule.forRoot(appRoutes)
   ],
